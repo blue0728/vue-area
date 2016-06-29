@@ -20,13 +20,12 @@ module.exports = {
 			loader: 'vue',
 		}, {
 			test: /\.js$/,
-			exclude: /node_modules|vue\/dist/,
-			loader: 'babel'
+			loader: 'babel',
+			exclude: /node_modules/
 		}]
 	},
 	babel: {
-		presets: ['es2015', 'stage-0'],
-		plugins: ['transform-runtime']
+		"presets": ["es2015"]
 	},
 	plugins: []
 };

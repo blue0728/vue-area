@@ -1,3 +1,8 @@
+## Install
+```
+npm install vue-area --save
+
+```
 
 ## Info
 
@@ -21,17 +26,12 @@ Provincial level three linkage
 
 ```result```  省市区数据
 
-## Install
-```
-npm install vue-area --save
-
-```
 ## Usage
 
 ```js
 'use strict'
 import Vue from 'vue'
-import vueArea from '../src/vue-area.vue'
+import vueArea from 'vue-area'
 
 new Vue({
 	el: '#app',
@@ -52,7 +52,7 @@ new Vue({
 ## Run Demo
 
 ```
-npm install 
+npm install
 
 webpack & node server.js
 
