@@ -21,7 +21,7 @@ http://localhost:9100/demo/index.html#
 ## API
 
 ```js
-    <prov-city :show.sync="show" :result.sync="result"></prov-city>
+    <vue-area :show.sync="show" :result.sync="result"></vue-area>
 ```
 
 ```show``` 显示隐藏组件
@@ -31,21 +31,22 @@ http://localhost:9100/demo/index.html#
 ## Usage
 
 ```js
+'use strict'
 import Vue from 'vue'
-import provCity from './src/provCity.vue'
+import vueArea from '../src/vue-area.vue'
 
 new Vue({
-    el: '#app',
-    components: {
-        provCity
-    },
-    data: {
-        result: null,
-        show: false
-    }
+	el: '#app',
+	components: {
+		vueArea
+	},
+	data: {
+		result: null,
+		show: false
+	}
 })
 ```
 
 ```html
-<prov-city :show.sync="show" :result.sync="result"></prov-city>
+<vue-area :show.sync="show" :result.sync="result"></vue-area>
 ```
