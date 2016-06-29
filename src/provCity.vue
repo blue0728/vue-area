@@ -249,9 +249,6 @@ export default {
             this.filterArea();
         },
         submit(){
-            console.log('省：' + this.provinceState.data[this.provinceState.index].name)
-            console.log('市：' + this.cityState.data[this.cityState.index].name)
-            console.log('区：' + this.areaState.data[this.areaState.index].name)
             this.result = {
                 'province': this.provinceState.data[this.provinceState.index],
                 'city': this.cityState.data[this.cityState.index],
@@ -263,7 +260,7 @@ export default {
             this.cityState.data = city.filter((item, index) => {
                 return item.parentId === this.provinceState.selectedId;
             })
-            this.cityState.selectedId = this.cityState.data[0].code;
+            this.cityState.selectedId = this.cityState.data[0] && this.cityState.data[0].code;
             this.cityState.translateY = 0;
             this.cityState.index = 0;
         },
@@ -271,7 +268,7 @@ export default {
             this.areaState.data = area.filter((item, index) => {
                 return item.parentId === this.cityState.selectedId;
             })
-            this.areaState.selectedId = this.areaState.data[0].code;
+            this.areaState.selectedId = this.areaState.data[0] && this.areaState.data[0].code;
             this.areaState.translateY = 0;
             this.areaState.index = 0;
         },
