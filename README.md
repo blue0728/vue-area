@@ -9,6 +9,8 @@ npm install
 
 webpack & node server.js
 
+http://localhost:9100/demo/index.html#
+
 ```
 
 ![](http://img.haimi.com/Fhhb5gQbD3qL1Ec39Y68SnEkaOzJ)

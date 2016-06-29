@@ -198,7 +198,7 @@
 </div>
 </template>
 <script>
-import {province, city, area} from './provCity';
+import {province, city, area} from './city-data';
 export default {
     data: function(){
         return {

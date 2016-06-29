@@ -1,11 +1,11 @@
 'use strict'
 import Vue from 'vue'
-import provCity from './src/provCity.vue'
+import vueArea from '../src/vue-area.vue'
 
 new Vue({
 	el: '#app',
 	components: {
-		provCity
+		vueArea
 	},
 	data: {
 		result: null,

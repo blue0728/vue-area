@@ -1,7 +1,7 @@
 {
-  "name": "vue-procity",
+  "name": "vue-area",
   "version": "1.0.0",
-  "description": "省市区三级联动 for vue",
+  "description": "省市区三级联动组件 for vue",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
