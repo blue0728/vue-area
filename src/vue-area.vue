@@ -131,7 +131,7 @@
                                     'current': item.code === provinceState.selectedId,
                                     'node1':  Math.abs($index - provinceState.index) == 1,
                                     'node2':  Math.abs($index - provinceState.index) == 2,
-                                    'node3':  Math.abs($index - provinceState.index) == 3
+                                    'node3':  Math.abs($index - provinceState.index) >= 3
                                 }"
                     >{{item.name}}</li>
                     <li></li>
@@ -157,7 +157,7 @@
                                     'current': item.code === cityState.selectedId,
                                     'node1':  Math.abs($index - cityState.index) == 1,
                                     'node2':  Math.abs($index - cityState.index) == 2,
-                                    'node3':  Math.abs($index - cityState.index) == 3
+                                    'node3':  Math.abs($index - cityState.index) >= 3
                             }"
                     >{{item.name}}</li>
                     <li></li>
@@ -183,7 +183,7 @@
                             'current': item.code === areaState.selectedId,
                             'node1':  Math.abs($index - areaState.index) == 1,
                             'node2':  Math.abs($index - areaState.index) == 2,
-                            'node3':  Math.abs($index - areaState.index) == 3
+                            'node3':  Math.abs($index - areaState.index) >= 3
                         }"
                     >{{item.name}}</li>
                     <li></li>
