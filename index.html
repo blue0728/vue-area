@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+	<title>Hello Vue-provCity</title>
+</head>
+<body>
+<style>
+*{margin:0;padding:0;}	
+a{margin: 30px auto;display: block;text-align: center;}
+</style>
+<div id="app">
+	<div>
+		<a href="#" @click="show = true">Hello Vue.js!</a>
+		<prov-city :show.sync="show" :result.sync="result"></prov-city>
+	</div>
+</div>
+<script src="/webpack-dev-server.js"></script>	
+<script src="./dist/app.js"></script>	
+</body>
+</html>

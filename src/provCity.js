@@ -1,0 +1,157 @@
+export const province = [{
+	code: 110000,
+	name: '北京市',
+	parentId: 0
+}, {
+	code: 120000,
+	name: '天津市',
+	parentId: 0
+}];
+
+export const city = [{
+	code: 110100,
+	name: '市辖区',
+	parentId: 110000
+}, {
+	code: 110200,
+	name: '县',
+	parentId: 110000
+}, {
+	code: 120100,
+	name: '市辖区',
+	parentId: 120000
+}, {
+	code: 120200,
+	name: '县',
+	parentId: 120000
+}];
+
+export const area = [{
+	code: 110101,
+	name: '东城区',
+	parentId: 110100
+}, {
+	code: 110102,
+	name: '西城区',
+	parentId: 110100
+}, {
+	code: 110105,
+	name: '朝阳区',
+	parentId: 110100
+}, {
+	code: 110106,
+	name: '丰台区',
+	parentId: 110100
+}, {
+	code: 110107,
+	name: '石景山区',
+	parentId: 110100
+}, {
+	code: 110108,
+	name: '海淀区',
+	parentId: 110100
+}, {
+	code: 110109,
+	name: '门头沟区',
+	parentId: 110100
+}, {
+	code: 110111,
+	name: '房山区',
+	parentId: 110100
+}, {
+	code: 110112,
+	name: '通州区',
+	parentId: 110100
+}, {
+	code: 110113,
+	name: '顺义区',
+	parentId: 110100
+}, {
+	code: 110114,
+	name: '昌平区',
+	parentId: 110100
+}, {
+	code: 110115,
+	name: '大兴区',
+	parentId: 110100
+}, {
+	code: 110116,
+	name: '怀柔区',
+	parentId: 110100
+}, {
+	code: 110117,
+	name: '平谷区',
+	parentId: 110100
+}, {
+	code: 110228,
+	name: '密云县',
+	parentId: 110200
+}, {
+	code: 110229,
+	name: '延庆县',
+	parentId: 110200
+}, {
+	code: 120101,
+	name: '和平区',
+	parentId: 120100
+}, {
+	code: 120102,
+	name: '河东区',
+	parentId: 120100
+}, {
+	code: 120103,
+	name: '河西区',
+	parentId: 120100
+}, {
+	code: 120104,
+	name: '南开区',
+	parentId: 120100
+}, {
+	code: 120105,
+	name: '河北区',
+	parentId: 120100
+}, {
+	code: 120106,
+	name: '红桥区',
+	parentId: 120100
+}, {
+	code: 120110,
+	name: '东丽区',
+	parentId: 120100
+}, {
+	code: 120111,
+	name: '西青区',
+	parentId: 120100
+}, {
+	code: 120112,
+	name: '津南区',
+	parentId: 120100
+}, {
+	code: 120113,
+	name: '北辰区',
+	parentId: 120100
+}, {
+	code: 120114,
+	name: '武清区',
+	parentId: 120100
+}, {
+	code: 120115,
+	name: '宝坻区',
+	parentId: 120100
+}, {
+	code: 120116,
+	name: '滨海新区',
+	parentId: 120100
+}, {
+	code: 120221,
+	name: '宁河县',
+	parentId: 120200
+}, {
+	code: 120223,
+	name: '静海县',
+	parentId: 120200
+}, {
+	code: 120225,
+	name: '蓟县',
+	parentId: 120200
+}]
