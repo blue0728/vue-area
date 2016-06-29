@@ -1,6 +1,6 @@
 ## Info
 
-省市区三级联动 Vue 组件
+Provincial level three linkage
 
 省市区三级数据[官方](http://www.stats.gov.cn/tjsj/tjbz/xzqhdm/201504/t20150415_712722.html)
 
