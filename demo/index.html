@@ -9,16 +9,24 @@
 <style>
 *{margin:0;padding:0;}	
 a{margin: 30px auto;display: block;text-align: center;}
+p{padding-left: 20px;}
+[v-cloak] {
+    display: none;
+}
 </style>
 <div id="app">
 	<div>
 		<a href="#" @click="show = true">Hello Vue.js!</a>
+		<p v-cloak>省：{{result.province.name}} {{result.province.code}}</p>
+		<p v-cloak>市：{{result.city.name}} {{result.city.code}}</p>
+		<p v-cloak>区：{{result.area.name}} {{result.area.code}}</p>
 		<vue-area :show.sync="show" :result.sync="result"></vue-area>
 	</div>
 </div>
 <script src="//cdn.bootcss.com/vue/1.0.25/vue.min.js"></script>
 <script src="../dist/vue-area.js"></script>
 <script>
+Vue.config.warnExpressionErrors = false;
 new Vue({
 	el: '#app',
 	components: {
