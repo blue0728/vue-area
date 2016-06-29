@@ -16,7 +16,19 @@ a{margin: 30px auto;display: block;text-align: center;}
 		<vue-area :show.sync="show" :result.sync="result"></vue-area>
 	</div>
 </div>
-<script src="/webpack-dev-server.js"></script>	
-<script src="../dist/app.js"></script>	
+<script src="//cdn.bootcss.com/vue/1.0.25/vue.min.js"></script>
+<script src="../dist/vue-area.js"></script>
+<script>
+new Vue({
+	el: '#app',
+	components: {
+		vueArea
+	},
+	data: {
+		result: null,
+		show: false
+	}
+})	
+</script>
 </body>
 </html>

@@ -1,10 +1,10 @@
 {
   "name": "vue-area",
-  "version": "1.0.0",
-  "description": "省市区三级联动组件 for vue",
-  "main": "index.js",
+  "version": "0.1.1",
+  "description": "vue-area component!",
+  "main": "dist/vue-area.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack"
   },
   "repository": {
     "type": "git",

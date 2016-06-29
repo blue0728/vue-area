@@ -5,12 +5,14 @@ var webpack = require("webpack");
 
 module.exports = {
 	entry: {
-		app: ['./demo/main.js']
+		'vue-area': path.join(__dirname, 'src/vue-area.vue')
 	},
 	output: {
-		path: path.resolve(__dirname, "dist"),
-		filename: "app.js",
-		publicPath: 'dist'
+		path: path.join(__dirname, 'dist'),
+		publicPath: '/',
+		library: 'vueArea',
+		libraryTarget: 'umd',
+		filename: "[name].js"
 	},
 	module: {
 		loaders: [{

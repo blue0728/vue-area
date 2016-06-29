@@ -1,6 +1,6 @@
 'use strict'
 import Vue from 'vue'
-import vueArea from '../src/vue-area.vue'
+import vueArea from 'vue-area'
 
 new Vue({
 	el: '#app',
