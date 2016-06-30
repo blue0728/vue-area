@@ -2,6 +2,8 @@
 
 var path = require("path");
 var webpack = require("webpack");
+var pkg = require('./package.json');
+var banner = `${pkg.name} v${pkg.version}\n${pkg.description}\n${pkg.homepage}\n@author ${pkg.author}`;
 
 module.exports = {
 	entry: {
@@ -27,5 +29,8 @@ module.exports = {
 	babel: {
 		"presets": ["es2015"]
 	},
-	plugins: []
+	plugins: [
+		new webpack.optimize.UglifyJsPlugin(),
+		new webpack.BannerPlugin(banner)
+	]
 };
