@@ -16,27 +16,27 @@ p{padding-left: 20px;}
 </style>
 <div id="app">
 	<div>
-		<a href="#" @click="show = true">Hello Vue.js!</a>
+		<a href="javascript:;" @click="show = true">Hello Vue.js!</a>
 		<p v-cloak>省：{{result.province.name}} {{result.province.code}}</p>
 		<p v-cloak>市：{{result.city.name}} {{result.city.code}}</p>
 		<p v-cloak>区：{{result.area.name}} {{result.area.code}}</p>
-		<vue-area :show.sync="show" :result.sync="result"></vue-area>
+		
 	</div>
+	<vue-area :show.sync="show" :result.sync="result"></vue-area>
 </div>
 <script src="//cdn.bootcss.com/vue/1.0.25/vue.min.js"></script>
-<script src="../dist/vue-area.js"></script>
+<script src="http://192.168.2.51:8642/dist/vue-area.js"></script>
 <script>
-Vue.config.warnExpressionErrors = false;
 new Vue({
 	el: '#app',
 	components: {
-		vueArea
+		vueArea: vueArea
 	},
 	data: {
 		result: null,
 		show: false
 	}
-})	
+})
 </script>
 </body>
 </html>
