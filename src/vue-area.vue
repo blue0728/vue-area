@@ -102,16 +102,16 @@
     height: 0;
 }
 .expand-select-transition {transition: all .4s ease;bottom: 0px;}
-.expand-select-enter, .expand-select-leave {bottom: -289px;}
+.expand-select-enter, .expand-select-leave {transform: translate(0, 289px);}
 </style>
 <template>
 <div class="ProvCityBoxWarp">
     <div class="ProvCityBoxBg" v-show="show" @click="show = false" @touchmove="_stopDef"  @mousewheel="_stopDef"></div>
     <div class="ProvCityBox" v-show="show" transition="expand-select" @mousewheel="_stopDef">
         <div class="ProvCityHeader">
-            <div class="ProvCityHeaderCancle" @click="show = false">取消</div>
-            请选择
-            <div class="ProvCityHeaderConfirm" @click="submit">确定</div>
+            <div class="ProvCityHeaderCancle" @click="show = false">{{cancel}}</div>
+            {{title}}
+            <div class="ProvCityHeaderConfirm" @click="submit">{{confirm}}</div>
         </div>
         <div class="ProvCityContent">
             <div class="ProvCityContentList">
@@ -197,7 +197,7 @@
     </div>
 </div>
 </template>
-<script>
+<script type="text/ecmascript-6">
 import {province, city, area} from './city-data';
 export default {
     data: function(){
@@ -341,6 +341,24 @@ export default {
             e.preventDefault()
         }
     },
-    props: ['result','show']
+    props: {
+        'result': {
+            type: Object,
+            default: null
+        },
+        'show': Boolean,
+        'title': {
+            type: String,
+            default: '请选择'
+        },
+        'confirm': {
+            type: String,
+            default: '确定'
+        },
+        'cancel': {
+            type: String,
+            default: '取消'
+        }
+    }
 }
 </script>
