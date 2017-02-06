@@ -1,3 +1,5 @@
+
+
 ## Install
 ```
 npm install vue-area --save
@@ -5,7 +7,7 @@ npm install vue-area --save
 ```
 
 ## Info
-
+暂时只支持vue1.0 
 Provincial level three linkage
 
 省市区三级数据[官方](http://www.stats.gov.cn/tjsj/tjbz/xzqhdm/201504/t20150415_712722.html)
