@@ -1,4 +1,8 @@
 
+### 已经支持了vue2.x  ###
+
+vue1.x 版本请查看 branch vue1.x
+
 
 ## Install
 ```
@@ -7,7 +11,7 @@ npm install vue-area --save
 ```
 
 ## Info
-暂时只支持vue1.0 
+已经支持vue2.x
 Provincial level three linkage
 
 省市区三级数据[官方](http://www.stats.gov.cn/tjsj/tjbz/xzqhdm/201504/t20150415_712722.html)
