@@ -19,7 +19,7 @@ Provincial level three linkage
 ## API
 
 ```js
-    <vue-area :show.sync="show" :result.sync="result"></vue-area>
+    <vue-area :props-show="show" :props-result="result" v-on:result="areaResult"></vue-area>
 ```
 
 ```show``` 显示隐藏组件
@@ -33,20 +33,26 @@ Provincial level three linkage
 import Vue from 'vue'
 import vueArea from 'vue-area'
 
-new Vue({
-	el: '#app',
-	components: {
-		vueArea
-	},
-	data: {
-		result: null,
-		show: false
-	}
+var app = new Vue({
+  el: '#app',
+  components: {
+    vueArea
+  },
+  methods: {
+    areaResult: function(show, result){
+        this.show = show
+        this.result = result
+    }
+  },
+  data: {
+    result: null,
+    show: false
+  }
 })
 ```
 
 ```html
-<vue-area :show.sync="show" :result.sync="result"></vue-area>
+<vue-area :props-show="show" :props-result="result" v-on:result="areaResult"></vue-area>
 ```
 
 ## Run Demo

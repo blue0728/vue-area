@@ -19,19 +19,11 @@ module.exports = {
 	module: {
 		loaders: [{
 			test: /\.vue$/,
-			loader: 'vue',
+			loader: 'vue-loader',
 		}, {
 			test: /\.js$/,
-			loader: 'babel',
+			loader: 'babel-loader',
 			exclude: /node_modules/
 		}]
-	},
-	babel: {
-		presets: ['es2015', 'stage-0'],
-		plugins: ['transform-runtime']
-	},
-	plugins: [
-		new webpack.optimize.UglifyJsPlugin(),
-		new webpack.BannerPlugin(banner)
-	]
+	}
 };
