@@ -1,6 +1,6 @@
 {
   "name": "vue-area",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "vue-area component for vue2.x!",
   "main": "dist/vue-area.js",
   "scripts": {
