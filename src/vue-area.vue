@@ -27,13 +27,13 @@
 .ProvCityHeaderCancle{
     float: left;
     padding: 0 20px;
-    color: #ff5657;
+    color: blue;
     font-size: 16px!important;
 }
 .ProvCityHeaderConfirm{
     float: right;
     padding: 0 20px;
-    color: #ff5657;
+    color: blue;
     font-size: 16px!important;
 }
 .ProvCityContent{
@@ -370,7 +370,7 @@ export default {
         },
         'title': {
             type: String,
-            default: '请选择'
+            default: ''
         },
         'confirm': {
             type: String,
